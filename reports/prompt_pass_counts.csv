@@ -1,0 +1,3 @@
+prompt,number_accuracy,relevance,format,total (of 15),mean words
+structured,4,5,5,14,86.0
+vague,2,0,0,2,554.0

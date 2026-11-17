@@ -1,0 +1,10 @@
+test_id,test,expected,observed,pass_fail,fix
+1,Open the app without a Groq key,"All data, prediction, group, image and feedback functions still work; Offline summary shown",,,
+2,Select a supplied example record,Estimated duration in minutes and the delivery group description appear,,,
+3,"Use a supplied sample image (0_car.png, 1_truck.png)","Image processed to 32x32x3 RGB, class order car/truck, manual correction available",,,
+4,Submit a blank comment,Treated as empty and excluded from sentiment totals,,,
+5,Enter distance_km = 0,Rejected with a range message (1-30 km) before prediction,,,
+6,Enter an out-of-range value or omit a required column,Clear error message appears before prediction,,,
+7,Simulate a free API rate limit or network error (wrong key),App remains usable and offers Offline summary,,,
+8,Restart the app or rerun a widget,Models load from files; training does not run again,,,
+9,Open the repository on another computer,README and included files are sufficient to run it,,,
